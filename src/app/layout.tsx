@@ -8,16 +8,16 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "PieLine for Pizza Restaurants | AI Phone Ordering That Never Misses a Call",
+  title: "PieLine | AI Phone Ordering for Restaurants — Never Miss a Call",
   description:
-    "AI phone assistant built for pizza restaurants. Handles complex orders (half-and-half, extra toppings, custom sizes), upsells sides and drinks, and sends orders straight to your POS. Never miss a call during Friday night rush again.",
+    "AI phone assistant for restaurants. Answers every call 24/7, takes orders with 90%+ accuracy, handles complex modifications, and sends orders straight to your POS. Live at 11+ restaurant locations.",
   keywords:
-    "pizza restaurant phone ordering, AI phone assistant pizza, pizza delivery automation, POS integration pizza, phone order taking pizza shop",
+    "restaurant phone ordering, AI phone assistant restaurant, restaurant automation, POS integration, phone order taking, voice AI restaurant",
   openGraph: {
-    title: "PieLine for Pizza | AI Phone Ordering That Never Misses a Call",
+    title: "PieLine | AI Phone Ordering for Restaurants — Never Miss a Call",
     description:
-      "AI phone assistant built for pizza restaurants. Handles complex orders, upsells automatically, integrates with your POS.",
-    url: "https://pizza.getpieline.com",
+      "AI phone assistant for restaurants. Answers every call 24/7, takes orders with 90%+ accuracy, integrates with your POS.",
+    url: "https://aiphoneordering.com",
     siteName: "PieLine",
     locale: "en_US",
     type: "website",
