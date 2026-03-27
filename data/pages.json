@@ -1,0 +1,31 @@
+[
+  {
+    "slug": "pizza-rush-hour",
+    "title": "PieLine for Pizza Shops | Never Miss a Friday Night Order",
+    "meta_description": "AI phone ordering built for pizza restaurants. Handles half-and-half, complex toppings, upsells sides automatically. 20 simultaneous calls during rush hour.",
+    "headline": "Your Friday night rush is costing you $500+ in missed orders",
+    "subheadline": "PieLine answers every call, takes complex pizza orders perfectly, and sends them straight to your POS. Your staff stays on the line - the make line.",
+    "pain_points": [
+      "Staff choosing between answering phones and making pizzas during peak hours",
+      "30-40% of calls going unanswered on busy nights",
+      "Complex orders getting botched when staff are rushing"
+    ],
+    "features": [
+      {
+        "title": "Handles 20 calls at once",
+        "description": "Super Bowl Sunday, Friday rush, game night - zero hold time, zero missed orders"
+      },
+      {
+        "title": "Pizza-specific AI",
+        "description": "Half-and-half, stuffed crust, extra toppings, custom sizes - confirms every detail before sending to POS"
+      },
+      {
+        "title": "Automatic upselling",
+        "description": "Suggests breadsticks, drinks, desserts on every order. 15-20% higher average ticket."
+      }
+    ],
+    "cta_text": "See how it handles your menu",
+    "cta_url": "https://getpieline.com",
+    "context": "General pizza restaurant rush hour pain point"
+  }
+]
