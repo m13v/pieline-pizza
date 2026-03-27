@@ -1,6 +1,4 @@
-"use client";
-
-import { useState } from "react";
+const BOOKING_URL = "https://cal.com/matt364/pieline-demo";
 
 type Feature = {
   title: string;
@@ -167,10 +165,6 @@ function ComparisonSection() {
 }
 
 function CTASection({ page }: { page: PageData }) {
-  const [phone, setPhone] = useState("");
-  const [email, setEmail] = useState("");
-  const [submitted, setSubmitted] = useState(false);
-
   return (
     <section
       id="cta"
@@ -196,70 +190,30 @@ function CTASection({ page }: { page: PageData }) {
                   key={item}
                   className="flex items-center gap-3 text-white text-sm"
                 >
-                  <span className="text-amber-200">✓</span> {item}
+                  <span className="text-amber-200">&#10003;</span> {item}
                 </li>
               ))}
             </ul>
           </div>
-          <div className="bg-white rounded-2xl p-8 shadow-xl">
-            {submitted ? (
-              <div className="text-center py-6">
-                <div className="text-4xl mb-3">📞</div>
-                <p className="text-lg font-semibold text-gray-900">
-                  We&apos;ll be in touch!
-                </p>
-                <p className="text-sm text-gray-500 mt-2">
-                  Expect a call or email shortly to set up your demo.
-                </p>
-              </div>
-            ) : (
-              <form
-                onSubmit={(e) => {
-                  e.preventDefault();
-                  setSubmitted(true);
-                }}
-                className="space-y-4"
-              >
-                <h3 className="text-lg font-semibold text-gray-900">
-                  {page.cta_text}
-                </h3>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">
-                    Phone Number
-                  </label>
-                  <input
-                    type="tel"
-                    value={phone}
-                    onChange={(e) => setPhone(e.target.value)}
-                    placeholder="(555) 123-4567"
-                    className="w-full px-4 py-3 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-amber-400"
-                    required
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">
-                    Email Address
-                  </label>
-                  <input
-                    type="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    placeholder="you@yourrestaurant.com"
-                    className="w-full px-4 py-3 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-amber-400"
-                    required
-                  />
-                </div>
-                <button
-                  type="submit"
-                  className="w-full bg-amber-500 hover:bg-amber-600 text-white font-semibold py-3.5 rounded-lg transition"
-                >
-                  Get a Demo
-                </button>
-                <p className="text-xs text-gray-400 text-center">
-                  Free demo. No credit card required.
-                </p>
-              </form>
-            )}
+          <div className="bg-white rounded-2xl p-8 shadow-xl text-center">
+            <h3 className="text-lg font-semibold text-gray-900 mb-2">
+              {page.cta_text}
+            </h3>
+            <p className="text-sm text-gray-500 mb-6">
+              15-minute call. We&apos;ll show you how PieLine handles your menu and
+              takes orders with 95%+ accuracy.
+            </p>
+            <a
+              href={BOOKING_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full bg-amber-500 hover:bg-amber-600 text-white font-semibold py-3.5 rounded-lg transition"
+            >
+              Book a Call
+            </a>
+            <p className="text-xs text-gray-400 mt-3">
+              Free 15-min call. No commitment required.
+            </p>
           </div>
         </div>
       </div>
