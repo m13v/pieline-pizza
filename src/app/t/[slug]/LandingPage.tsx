@@ -29,7 +29,7 @@ function Navbar() {
           </span>
         </a>
         <a
-          href="#cta"
+          href={BOOKING_URL} target="_blank" rel="noopener noreferrer"
           className="bg-amber-500 hover:bg-amber-600 text-white font-semibold px-5 py-2.5 rounded-lg text-sm transition"
         >
           Get Started
@@ -53,18 +53,12 @@ function HeroSection({ page }: { page: PageData }) {
           <p className="mt-6 text-lg md:text-xl text-gray-600 leading-relaxed">
             {page.subheadline}
           </p>
-          <div className="mt-8 flex flex-col sm:flex-row gap-4">
+          <div className="mt-8">
             <a
-              href="#cta"
-              className="bg-amber-500 hover:bg-amber-600 text-white font-semibold px-8 py-3.5 rounded-lg text-center transition shadow-lg shadow-amber-200"
+              href={BOOKING_URL} target="_blank" rel="noopener noreferrer"
+              className="inline-block bg-amber-500 hover:bg-amber-600 text-white font-semibold px-8 py-3.5 rounded-lg text-center transition shadow-lg shadow-amber-200"
             >
               {page.cta_text}
-            </a>
-            <a
-              href="#features"
-              className="border border-gray-300 hover:border-gray-400 text-gray-700 font-semibold px-8 py-3.5 rounded-lg text-center transition"
-            >
-              Learn More
             </a>
           </div>
         </div>

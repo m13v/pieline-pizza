@@ -29,10 +29,10 @@ function Navbar() {
           </a>
         </div>
         <a
-          href="#demo"
+          href={BOOKING_URL} target="_blank" rel="noopener noreferrer"
           className="bg-amber-500 hover:bg-amber-600 text-white font-semibold px-5 py-2.5 rounded-lg text-sm transition"
         >
-          Try Demo
+          Book a Call
         </a>
       </div>
     </nav>
@@ -57,18 +57,12 @@ function Hero() {
               complex toppings, upsells sides and drinks, and sends orders
               straight to your POS. 24/7.
             </p>
-            <div className="mt-8 flex flex-col sm:flex-row gap-4">
+            <div className="mt-8">
               <a
-                href="#demo"
-                className="bg-amber-500 hover:bg-amber-600 text-white font-semibold px-8 py-3.5 rounded-lg text-center transition shadow-lg shadow-amber-200"
+                href={BOOKING_URL} target="_blank" rel="noopener noreferrer"
+                className="inline-block bg-amber-500 hover:bg-amber-600 text-white font-semibold px-8 py-3.5 rounded-lg text-center transition shadow-lg shadow-amber-200"
               >
-                Get Started
-              </a>
-              <a
-                href="#how-it-works"
-                className="border border-gray-300 hover:border-gray-400 text-gray-700 font-semibold px-8 py-3.5 rounded-lg text-center transition"
-              >
-                See How It Works
+                Book a Call
               </a>
             </div>
           </div>
