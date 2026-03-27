@@ -32,7 +32,7 @@ function Navbar() {
           href={BOOKING_URL} target="_blank" rel="noopener noreferrer"
           className="bg-amber-500 hover:bg-amber-600 text-white font-semibold px-5 py-2.5 rounded-lg text-sm transition"
         >
-          Get Started
+          Book a Call
         </a>
       </div>
     </nav>
