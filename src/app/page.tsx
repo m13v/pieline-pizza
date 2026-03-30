@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-const BOOKING_URL = "https://cal.com/matt364/pieline-demo";
+const BOOKING_URL = "https://cal.com/team/pieline-demo/pieline-demo";
 
 function Navbar() {
   return (
